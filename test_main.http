@@ -22,15 +22,15 @@ Content-Type: application/pdf
 <> 2025-06-13T113659.500.txt
 
 ###
-GET http://192.168.9.29:9090/ocr_and_get_pdf_file?file_name=0cb8ef81-3473-4f70-98bd-cb8a71069be3.new.pdf
+GET http://192.168.9.29:9090/ocr_and_get_pdf_file?file_name=2afce8e6-ae2a-445a-becc-2ccdf1717098.new.pdf
 
 ###
-GET http://192.168.9.29:9090/ocr_and_get_base64?file_name=0cb8ef81-3473-4f70-98bd-cb8a71069be3.new.pdf
+GET http://192.168.9.29:9090/ocr_and_get_base64?file_name=2afce8e6-ae2a-445a-becc-2ccdf1717098.new.pdf
 
 <> 2025-06-13T141656.200.json
 
 ###
-GET http://192.168.9.29:9090/ocr_and_get_pdf_text?file_name=0cb8ef81-3473-4f70-98bd-cb8a71069be3.new.pdf
+GET http://192.168.9.29:9090/ocr_and_get_pdf_text?file_name=2afce8e6-ae2a-445a-becc-2ccdf1717098.new.pdf
 
 <> 2025-06-13T142829.200.json
 <> 2025-06-13T142647.500.json
