@@ -7,11 +7,8 @@ if [ -f $PIDFILE ]; then
 
     if [ $? -ne 0 ]; then
         echo "process provider not exist"
-#       echo "process id: $PID"
-#        kill -9 $PID
     else
-        echo "process id: $PID"
-        kill -9 $PID
-#       echo "process provider not exist"
+        echo "kill process group: $PID"
+        kill -9 -$PID
     fi
 fi
