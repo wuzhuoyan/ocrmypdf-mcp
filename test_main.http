@@ -1,11 +1,37 @@
-# Test your FastAPI endpoints
+###
+GET http://192.168.9.29:9090/health
 
-GET http://127.0.0.1:8000/
-Accept: application/json
+<> 2025-06-12T233216.200.json
 
 ###
+POST http://192.168.9.29:9090/upload_pdf_file
+Content-Type: multipart/form-data; boundary=boundary
 
-GET http://127.0.0.1:8000/hello/User
-Accept: application/json
+--boundary
+Content-Disposition: form-data; name="file"; filename="tidan.pdf"
+Content-Type: application/pdf
+
+< C:/Users/wuzhuoyan/Downloads/tidan.pdf
+--boundary--
+
+<> 2025-06-13T115739.200.json
+<> 2025-06-13T114203.500.txt
+<> 2025-06-13T113746.500.txt
+<> 2025-06-13T113736.500.txt
+<> 2025-06-13T113732.500.txt
+<> 2025-06-13T113659.500.txt
 
 ###
+GET http://192.168.9.29:9090/ocr_and_get_pdf_file?file_name=0cb8ef81-3473-4f70-98bd-cb8a71069be3.new.pdf
+
+###
+GET http://192.168.9.29:9090/ocr_and_get_base64?file_name=0cb8ef81-3473-4f70-98bd-cb8a71069be3.new.pdf
+
+<> 2025-06-13T141656.200.json
+
+###
+GET http://192.168.9.29:9090/ocr_and_get_pdf_text?file_name=0cb8ef81-3473-4f70-98bd-cb8a71069be3.new.pdf
+
+<> 2025-06-13T142829.200.json
+<> 2025-06-13T142647.500.json
+<> 2025-06-13T142453.500.json
